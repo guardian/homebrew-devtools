@@ -1,4 +1,4 @@
-class SsmScala < Formula
+class Ssm < Formula
   desc "ssh replacement: CLI program that wraps SSM's EC2 Run Command"
   homepage "https://github.com/guardian/ssm-scala"
   version "0.6.0"
