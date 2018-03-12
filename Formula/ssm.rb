@@ -3,7 +3,7 @@ class Ssm < Formula
   homepage "https://github.com/guardian/ssm-scala"
   version "0.8.0"
   url "https://github.com/guardian/ssm-scala/releases/download/v0.8.0/ssm.tar.gz"
-  sha256 "eee418f02c09099a4b7ab46005928fc5b3ab64f8c46faed120fc265bc5dca6a1"
+  sha256 "b880cad7efac89fd9722a1a3af6c71541820bd098f94e66ced0a0ec08e88f047"
 
   def install
     bin.install "ssm"
