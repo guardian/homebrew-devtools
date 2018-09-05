@@ -5,3 +5,4 @@ cask 'gu-base' do
 
   depends_on cask: 'intellij-idea'
   depends_on formula: 'guardian/devtools/ssm'
+end
