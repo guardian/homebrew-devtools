@@ -4,5 +4,5 @@ cask 'printer' do
   name '🗞🖨'
   depends_on cask: 'caskroom/drivers/apple-hewlettpackardprinterdrivers'
 
-  system "/usr/local/Homebrew/Library/Taps/guardian/homebrew-devtools/resources/install-printer.sh"
+  system "/usr/local/Homebrew/Library/Taps/guardian/homebrew-devtools/resources/printer.sh"
 end
