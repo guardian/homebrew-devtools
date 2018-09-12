@@ -7,7 +7,6 @@ cask 'gu-base' do
   url 'https://github.com/guardian/homebrew-devtools'
   stage_only true
 
-
   # main applications
   depends_on formula:  'openssl'
   depends_on formula:  'mas'
