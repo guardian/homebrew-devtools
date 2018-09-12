@@ -1,7 +1,12 @@
 cask 'gu-base' do 
   version '0.0.1'
+  sha256 :nocheck
 
   name 'Guardian Base'
+  homepage 'https://github.com/guardian/homebrew-devtools'
+  url 'https://github.com/guardian/homebrew-devtools'
+  stage_only true
+
 
   # main applications
   depends_on formula:  'openssl'
