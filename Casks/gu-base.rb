@@ -47,5 +47,4 @@ cask 'gu-base' do
   depends_on cask: 'postman'
   depends_on cask: 'vlc'
 
-
 end
