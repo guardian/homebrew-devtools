@@ -1,6 +1,6 @@
 cask 'gu-base' do 
   version '0.0.1'
-  sha256 :nocheck
+  sha256 :no_check
 
   name 'Guardian Base'
   homepage 'https://github.com/guardian/homebrew-devtools'
