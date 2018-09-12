@@ -1,8 +1,15 @@
 cask 'printer' do 
   version '2'
+  sha256 :nocheck
 
+  url 'https://raw.githubusercontent.com/guardian/homebrew-devtools/712e804eb654af3c8e66465e2668bb2db1093704/resources/printer.sh'
   name '🗞🖨'
+
   depends_on cask: 'caskroom/drivers/apple-hewlettpackardprinterdrivers'
 
-  system "/usr/local/Homebrew/Library/Taps/guardian/homebrew-devtools/resources/printer.sh"
+  stage_only true
+
+  postflight do
+    system "#{staged_path}/printer.sh"
+  end
 end
