@@ -39,7 +39,6 @@ cask 'gu-base' do
   depends_on cask: 'google-chrome'
   depends_on cask: 'iterm2'
   depends_on cask: 'caskroom/versions/firefoxdeveloperedition'
-  depends_on cask: 'dropbox'
   depends_on cask: 'visualvm'
   depends_on cask: 'intellij-idea'
   depends_on cask: 'visual-studio-code'
