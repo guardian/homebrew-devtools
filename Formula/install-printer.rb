@@ -1,5 +1,5 @@
 class InstallPrinter < Formula
-  desc "🗞🖨"
+  desc "🗞🖨 This is now deprecated in favour of brew cask install guardian/devtools/printer 🗞🖨 "
   homepage "https://gist.github.com/AWare/7a0321260ed26845060be67736885207"
   version "1"
   url "https://gist.githubusercontent.com/AWare/7a0321260ed26845060be67736885207/raw/79926e033bd91fac7793f9c2e4dfb5cdc98da049/install-printer.sh", :using => :nounzip
