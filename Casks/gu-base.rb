@@ -23,6 +23,8 @@ cask 'gu-base' do
   depends_on formula:  'tree'
   depends_on formula:  'unrar'
   depends_on formula:  'watch'
+  depends_on formula:  'awscli'
+  depends_on formula:  'nginx'
 
   # dev langs
   depends_on cask: 'caskroom/versions/java8'
