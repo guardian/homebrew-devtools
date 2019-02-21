@@ -27,7 +27,7 @@ cask 'gu-base' do
   depends_on formula:  'nginx'
 
   # dev langs
-  depends_on cask: 'caskroom/versions/java8'
+  depends_on cask:     'AdoptOpenJDK/openjdk/adoptopenjdk8'
   depends_on formula:  'scala'
   depends_on formula:  'sbt'
   depends_on formula:  'node'
