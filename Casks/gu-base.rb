@@ -28,8 +28,7 @@ cask 'gu-base' do
 
   # dev langs
   depends_on cask:     'AdoptOpenJDK/openjdk/adoptopenjdk8'
-  depends_on formula:  'scala'
-  depends_on formula:  'sbt'
+  depends_on cask:     'gu-scala'
   depends_on formula:  'node'
   depends_on formula:  'yarn'
 
