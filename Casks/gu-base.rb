@@ -35,9 +35,6 @@ cask 'gu-base' do
 
   # guardian stuff
   depends_on formula:  'guardian/devtools/ssm'
-  depends_on formula:  'ruby'
-  depends_on formula:  'brew-gem'
-  depends_on gem:      'prism-marauder'
 
   # gui apps
   depends_on cask: 'keepingyouawake'
