@@ -38,7 +38,6 @@ cask 'gu-base' do
   # gui apps
   depends_on cask: 'keepingyouawake'
   depends_on cask: 'iterm2'
-  depends_on cask: 'caskroom/versions/firefox-developer-edition'
   depends_on cask: 'visualvm'
   depends_on cask: 'intellij-idea'
   depends_on cask: 'visual-studio-code'
