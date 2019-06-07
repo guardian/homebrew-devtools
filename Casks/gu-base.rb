@@ -34,6 +34,7 @@ cask 'gu-base' do
 
   # guardian stuff
   depends_on formula:  'guardian/devtools/ssm'
+  depends_on formula:  'guardian/devtools/dev-nginx'
 
   # gui apps
   depends_on cask: 'keepingyouawake'
