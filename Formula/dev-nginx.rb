@@ -3,7 +3,7 @@ class DevNginx < Formula
   homepage "https://github.com/guardian/dev-nginx"
   version "1.0.0"
   url "https://github.com/guardian/dev-nginx/archive/v1.0.0.tar.gz"
-  sha256 "e62a42e2a3150f1d24fb83914cfcff845820137a143c7aac06e114456907c34e"
+  sha256 "4388b63823f1df56f203d8fcc3be1f48a67da7e92dc5adcbec8fdb18263ffe9e"
 
   depends_on "nginx"
   depends_on "mkcert"
