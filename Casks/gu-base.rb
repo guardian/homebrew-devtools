@@ -1,5 +1,5 @@
 cask 'gu-base' do 
-  version '0.0.3'
+  version '0.0.4'
   sha256 :no_check
 
   name 'Guardian Base'
@@ -34,6 +34,7 @@ cask 'gu-base' do
 
   # guardian stuff
   depends_on formula:  'guardian/devtools/ssm'
+  depends_on formula:  'guardian/devtools/dev-nginx'
 
   # gui apps
   depends_on cask: 'keepingyouawake'
