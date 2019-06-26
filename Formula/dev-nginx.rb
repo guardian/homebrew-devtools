@@ -1,9 +1,9 @@
 class DevNginx < Formula
   desc "Tools to configure a local development nginx to proxy our applications and services"
   homepage "https://github.com/guardian/dev-nginx"
-  version "1.0.2"
-  url "https://github.com/guardian/dev-nginx/releases/download/v1.0.2/dev-nginx.tar.gz"
-  sha256 "0a7b27be53e14461d977c324eec976ea1d07fc890b3b7ec997d156afc57be198"
+  version "1.0.3"
+  url "https://github.com/guardian/dev-nginx/releases/download/v1.0.3/dev-nginx.tar.gz"
+  sha256 "01ef75d160fbaf4bb44f408c786445be88b46192dd5442ed0a9ae84625065599"
 
   depends_on "nginx"
   depends_on "mkcert"
