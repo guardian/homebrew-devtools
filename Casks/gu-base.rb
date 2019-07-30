@@ -46,5 +46,6 @@ cask 'gu-base' do
   depends_on cask: 'gpg-suite'
   depends_on cask: 'postman'
   depends_on cask: 'vlc'
+  depends_on cask: 'spectacle'
 
 end
