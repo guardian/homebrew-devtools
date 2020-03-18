@@ -2,14 +2,16 @@
 function join { local IFS="$1"; shift; echo "$*"; }
 
 DOMAINS=(
-	'teamcity.gutools.co.uk'
-	'janus.gutools.co.uk'
-	'riffraff.gutools.co.uk'
-	'metrics.gutools.co.uk'
+    'teamcity.gutools.co.uk'
+    'janus.gutools.co.uk'
+    'riffraff.gutools.co.uk'
+    'metrics.gutools.co.uk'
     'amiable.gutools.co.uk'
     'amigo.gutools.co.uk'
     'prism.gutools.co.uk'
-	)
+    'security-hq.gutools.co.uk'
+    'zerobin.gutools.co.uk'
+)
 
 DOMAINS_STRING=$(join ' ' ${DOMAINS[@]})
 
