@@ -4,7 +4,7 @@ class GuVpn < Formula
     homepage "https://github.com/guardian/homebrew-devtools"
     version "1"
     url "https://raw.githubusercontent.com/guardian/homebrew-devtools/master/scripts/run-vpn.sh"
-    sha256 "646a5e31136ee1eafd20b704d3305160a63cc5711a43098ff16a27aa86c3bc99"
+    sha256 "dcf29bd392ce23e1987a274bd3f6d058fdd3cd88047728e99ff114a9336f3f40"
   
     depends_on "openconnect"
     depends_on "bind"

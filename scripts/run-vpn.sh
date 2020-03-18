@@ -11,6 +11,10 @@ DOMAINS=(
     'prism.gutools.co.uk'
     'security-hq.gutools.co.uk'
     'zerobin.gutools.co.uk'
+    'support.gutools.co.uk'
+    'support-logs.gutools.co.uk'
+    'status.membership.guardianapis.com'
+    'memsub-promotions.gutools.co.uk'
 )
 
 DOMAINS_STRING=$(join ' ' ${DOMAINS[@]})
