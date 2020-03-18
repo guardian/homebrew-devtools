@@ -1,6 +1,6 @@
 class GuVpn < Formula
   
-    desc "Shiny new formula"
+    desc "Formula for guardian vpn access using openconnect and vpn-slice script"
     homepage "https://github.com/guardian/homebrew-devtools"
     version "1"
     url "https://gist.githubusercontent.com/philmcmahon/d5b17e0217d35c2d008a11453cf66602/raw/8735a5fad4bed60efd4f3b63d464925b1785d01c/run-vpn.sh"
