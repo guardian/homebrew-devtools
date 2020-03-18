@@ -15,9 +15,12 @@ DOMAINS=(
 
 DOMAINS_STRING=$(join ' ' ${DOMAINS[@]})
 
-echo "Setting up VPN for these domains: ${DOMAINS_STRING}"
 
 pyenv install 3.7.2 -s
 pyenv shell 3.7.2
-pip3 install vpn-slice
+pip3 install vpn-slice -q --disable-pip-version-check
+
+echo ""
+echo "Setting up VPN for these domains: ${DOMAINS_STRING}"
+
 openconnect https://digivpn.theguardian.com -s "vpn-slice ${DOMAINS_STRING}"
