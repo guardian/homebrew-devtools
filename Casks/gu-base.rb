@@ -1,5 +1,5 @@
 cask 'gu-base' do 
-  version '0.0.4'
+  version '0.0.5'
   sha256 :no_check
 
   name 'Guardian Base'
