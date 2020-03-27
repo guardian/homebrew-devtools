@@ -1,5 +1,5 @@
 cask 'gu-base' do 
-  version '0.0.4'
+  version '0.0.5'
   sha256 :no_check
 
   name 'Guardian Base'
@@ -47,5 +47,6 @@ cask 'gu-base' do
   depends_on cask: 'postman'
   depends_on cask: 'vlc'
   depends_on cask: 'spectacle'
+  depends_on cask: 'licecap'
 
 end
