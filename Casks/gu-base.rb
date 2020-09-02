@@ -9,6 +9,7 @@ cask 'gu-base' do
 
   # main applications
   depends_on formula:  'openssl'
+  depends_on formula:  'mas'
   depends_on formula:  'wget'
   depends_on formula:  'ack'
   depends_on formula:  'jq'
