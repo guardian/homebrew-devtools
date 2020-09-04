@@ -1,0 +1,17 @@
+name: CI
+on: [pull_request]
+jobs:
+  install:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: "Install local casks with Homebrew"
+        # macos-latest comes with node 12 installed,
+        # we need to unlink it first otherwise brew will fail as it can't link the version installed by `gu-base`
+        # see https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.15-Readme.md
+        # see https://github.com/Homebrew/brew/issues/1505
+        run: |
+          brew unlink node@12
+          mkdir -p /usr/local/Homebrew/Library/Taps/guardian
+          ln -s $PWD /usr/local/Homebrew/Library/Taps/guardian/homebrew-devtools
+          brew cask install Casks/gu-base.rb
