@@ -1,4 +1,10 @@
 #!/bin/bash
+
+if [ "$EUID" -ne 0 ]; then
+  echo "This script needs to run as root. Please try again."
+  exit 1
+fi
+
 function join { local IFS="$1"; shift; echo "$*"; }
 
 DOMAINS=(
