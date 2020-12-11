@@ -1,4 +1,10 @@
 #!/bin/bash
+
+if [ "$EUID" -ne 0 ]; then
+  echo "This script needs to run as root. Please try again."
+  exit 1
+fi
+
 function join { local IFS="$1"; shift; echo "$*"; }
 
 DOMAINS=(
@@ -18,11 +24,6 @@ DOMAINS=(
 )
 
 DOMAINS_STRING=$(join ' ' ${DOMAINS[@]})
-
-
-pyenv install 3.7.2 -s
-pyenv shell 3.7.2
-pip3 install vpn-slice -q --disable-pip-version-check
 
 echo ""
 echo "Setting up VPN for these domains: ${DOMAINS_STRING}"
