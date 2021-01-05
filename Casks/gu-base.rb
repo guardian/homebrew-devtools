@@ -21,7 +21,6 @@ cask 'gu-base' do
   depends_on formula:  'htop'
   depends_on formula:  'mtr'
   depends_on formula:  'tree'
-  depends_on formula:  'unrar'
   depends_on formula:  'watch'
   depends_on formula:  'awscli'
   depends_on formula:  'nginx'
