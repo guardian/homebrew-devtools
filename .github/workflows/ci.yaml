@@ -16,4 +16,4 @@ jobs:
           rm /usr/local/bin/aws_completer
           mkdir -p /usr/local/Homebrew/Library/Taps/guardian
           ln -s $PWD /usr/local/Homebrew/Library/Taps/guardian/homebrew-devtools
-          brew cask install Casks/gu-base.rb
+          brew install --cask Casks/gu-base.rb
