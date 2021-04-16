@@ -17,4 +17,5 @@ jobs:
           mkdir -p /usr/local/Homebrew/Library/Taps/guardian
           ln -s $PWD /usr/local/Homebrew/Library/Taps/guardian/homebrew-devtools
           brew tap adoptopenjdk/openjdk
+          brew tap homebrew/cask-versions
           brew install --cask Casks/gu-base.rb
