@@ -18,4 +18,5 @@ jobs:
           ln -s $PWD /usr/local/Homebrew/Library/Taps/guardian/homebrew-devtools
           brew tap adoptopenjdk/openjdk
           brew tap homebrew/cask-versions
+          brew update
           brew install --cask Casks/gu-base.rb
