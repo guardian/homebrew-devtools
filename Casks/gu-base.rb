@@ -8,8 +8,8 @@ cask 'gu-base' do
   stage_only true
 
   # main applications
+
   depends_on formula:  'openssl'
-  depends_on formula:  'mas'
   depends_on formula:  'wget'
   depends_on formula:  'ack'
   depends_on formula:  'jq'
@@ -27,8 +27,6 @@ cask 'gu-base' do
   depends_on formula:  'nginx'
 
   # dev langs
-  depends_on cask:     'adoptopenjdk/openjdk/adoptopenjdk8'
-  depends_on cask:     'gu-scala'
   depends_on formula:  'node'
   depends_on formula:  'yarn'
 
@@ -39,7 +37,6 @@ cask 'gu-base' do
   # gui apps
   depends_on cask: 'keepingyouawake'
   depends_on cask: 'iterm2'
-  depends_on cask: 'homebrew/cask-versions/firefox-developer-edition'
   depends_on cask: 'visualvm'
   depends_on cask: 'intellij-idea'
   depends_on cask: 'visual-studio-code'
