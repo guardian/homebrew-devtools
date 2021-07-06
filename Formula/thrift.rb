@@ -21,11 +21,10 @@ class Thrift < Formula
   end
 
   bottle do
-    cellar :any
     rebuild 1
-    sha256 "f3bd35df2ba94af77f15a836668db5eb7dfc0d37c77a2f77bc6cc980e1524f27" => :sierra
-    sha256 "528061b3a3689341d76d76a7faaa6345100bbbadeb4055a26f1acb6377aad3ba" => :el_capitan
-    sha256 "7b1c9edc94356d9cb426237fab09143c64d2bb2a85d86f7d8236702fa110f90c" => :yosemite
+    sha256 cellar: :any, sierra:     "f3bd35df2ba94af77f15a836668db5eb7dfc0d37c77a2f77bc6cc980e1524f27"
+    sha256 cellar: :any, el_capitan: "528061b3a3689341d76d76a7faaa6345100bbbadeb4055a26f1acb6377aad3ba"
+    sha256 cellar: :any, yosemite:   "7b1c9edc94356d9cb426237fab09143c64d2bb2a85d86f7d8236702fa110f90c"
   end
 
   head do
@@ -78,12 +77,13 @@ class Thrift < Formula
     system "make", "install"
   end
 
-  def caveats; <<~EOS
-    To install Ruby binding:
-      gem install thrift
+  def caveats
+    <<~EOS
+      To install Ruby binding:
+        gem install thrift
 
-    To install PHP extension for e.g. PHP 5.5:
-      brew install homebrew/php/php55-thrift
-  EOS
+      To install PHP extension for e.g. PHP 5.5:
+        brew install homebrew/php/php55-thrift
+    EOS
   end
 end
