@@ -44,7 +44,7 @@ cask 'gu-base' do
   depends_on cask: 'gpg-suite'
   depends_on cask: 'postman'
   depends_on cask: 'vlc'
-  depends_on cask: 'spectacle'
+  depends_on cask: 'rectangle'
   depends_on cask: 'licecap'
   depends_on cask: 'session-manager-plugin'
 
