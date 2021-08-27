@@ -21,6 +21,10 @@ DOMAINS=(
     'support-logs.gutools.co.uk'
     'status.membership.guardianapis.com'
     'memsub-promotions.gutools.co.uk'
+
+    # For Oracle
+    'oracle.dmz.gnl'
+    'dc2-finprod-01.dc2.gnm.int'
 )
 
 DOMAINS_STRING=$(join ' ' ${DOMAINS[@]})
