@@ -25,7 +25,7 @@ cask 'gu-base' do
   depends_on formula:  'nginx'
 
   # dev langs
-  depends_on cask:     'adoptopenjdk/openjdk/adoptopenjdk8'
+  depends_on cask:     'temurin'
   depends_on cask:     'gu-scala'
   depends_on formula:  'node'
   depends_on formula:  'yarn'
