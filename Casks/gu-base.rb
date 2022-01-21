@@ -29,6 +29,7 @@ cask 'gu-base' do
   depends_on cask:     'gu-scala'
   depends_on formula:  'node'
   depends_on formula:  'yarn'
+  depends_on formula:  'fnm'
 
   # guardian stuff
   depends_on formula:  'guardian/devtools/ssm'
