@@ -15,6 +15,8 @@ jobs:
           rm /usr/local/bin/aws_completer
           mkdir -p /usr/local/Homebrew/Library/Taps/guardian
           ln -s $PWD /usr/local/Homebrew/Library/Taps/guardian/homebrew-devtools
+          cd $(brew --prefix);git clean -f
+          git pull https://github.com/guardian/homebrew-devtools main
           brew tap --repair
           brew update
           brew install --cask Casks/gu-base.rb
