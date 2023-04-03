@@ -4,17 +4,27 @@ jobs:
   install:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: "Install local casks with Homebrew"
-        # macos-latest comes with awscli installed,
-        # we need to unlink it first otherwise brew will fail as it can't link the version installed by `gu-base`
-        # see https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.15-Readme.md
-        # see https://github.com/Homebrew/brew/issues/1505
+      # macos-latest comes with awscli installed.
+      # We need to unlink it first otherwise brew will fail as it can't link the version installed by `gu-base`.
+      # See https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.15-Readme.md
+      # See https://github.com/Homebrew/brew/issues/1505
+      - name: "Patch Homebrew AWS CLI"
         run: |
           rm /usr/local/bin/aws
           rm /usr/local/bin/aws_completer
+
+      # Update homebrew _before_ checking out the branch to avoid git conflicts.
+      # The exact reasons why this is necessary are a little fuzzy.
+      # We've seen homebrew update the checked out code and cause git conflicts, which results in CI failing.
+      # See https://github.com/guardian/homebrew-devtools/pull/92.
+      - name: "Update Homebrew"
+        run: brew update
+
+      - uses: actions/checkout@v3
+
+      - name: "Install local casks with Homebrew"
+        run: |
           mkdir -p /usr/local/Homebrew/Library/Taps/guardian
           ln -s $PWD /usr/local/Homebrew/Library/Taps/guardian/homebrew-devtools
           brew tap --repair
-          brew update
           brew install --cask Casks/gu-base.rb
