@@ -5,6 +5,8 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v3
+      - with:
+        ref: ${{ github.ref }}
       - name: "Install local casks with Homebrew"
         # macos-latest comes with awscli installed,
         # we need to unlink it first otherwise brew will fail as it can't link the version installed by `gu-base`
@@ -18,5 +20,3 @@ jobs:
           brew tap --repair
           brew update
           brew install --cask Casks/gu-base.rb
-        with:
-          ref: ${{ github.ref }}
