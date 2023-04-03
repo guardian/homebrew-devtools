@@ -39,3 +39,5 @@ brew install --cask intellij-idea
 brew install --cask visual-studio-code
 brew install --cask google-chrome
 ```
+
+(test)
