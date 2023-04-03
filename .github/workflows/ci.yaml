@@ -4,12 +4,12 @@ jobs:
   install:
     runs-on: macos-latest
     steps:
-      - name: "Install local casks with Homebrew"
+      - name: Checkout
         uses: actions/checkout@v3
         with:
           ref: ${{ github.ref }}
 
-      - name: Hmmm
+      - name: "Install local casks with Homebrew"
         # macos-latest comes with awscli installed,
         # we need to unlink it first otherwise brew will fail as it can't link the version installed by `gu-base`
         # see https://github.com/actions/virtual-environments/blob/main/images/macos/macos-10.15-Readme.md
