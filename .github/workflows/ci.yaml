@@ -13,8 +13,12 @@ jobs:
         run: |
           rm /usr/local/bin/aws
           rm /usr/local/bin/aws_completer
+          git status
           mkdir -p /usr/local/Homebrew/Library/Taps/guardian
           ln -s $PWD /usr/local/Homebrew/Library/Taps/guardian/homebrew-devtools
+          git status
           brew tap --repair
+          git status
           brew update
+          git status
           brew install --cask Casks/gu-base.rb
