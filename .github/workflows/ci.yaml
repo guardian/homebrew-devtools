@@ -24,7 +24,7 @@ jobs:
 
       - name: "Install local casks with Homebrew"
         run: |
-          mkdir -p /usr/local/Homebrew/Library/Taps/guardian
-          ln -s $PWD /usr/local/Homebrew/Library/Taps/guardian/homebrew-devtools
+          mkdir -p $(brew --repository)/Library/Taps/guardian
+          ln -s $PWD $(brew --repository)/Library/Taps/guardian/homebrew-devtools
           brew tap --repair
           brew install --cask Casks/gu-base.rb
