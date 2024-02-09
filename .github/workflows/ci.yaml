@@ -2,7 +2,7 @@ name: CI
 on: [pull_request, workflow_dispatch]
 jobs:
   install:
-    runs-on: macos-latest
+    runs-on: macos-14
     steps:
       # macos-latest comes with awscli installed.
       # We need to unlink it first otherwise brew will fail as it can't link the version installed by `gu-base`.
@@ -20,11 +20,11 @@ jobs:
       - name: "Update Homebrew"
         run: brew update
 
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: "Install local casks with Homebrew"
         run: |
-          mkdir -p /usr/local/Homebrew/Library/Taps/guardian
-          ln -s $PWD /usr/local/Homebrew/Library/Taps/guardian/homebrew-devtools
+          mkdir -p $(brew --repository)/Library/Taps/guardian
+          ln -s $PWD $(brew --repository)/Library/Taps/guardian/homebrew-devtools
           brew tap --repair
           brew install --cask Casks/gu-base.rb
