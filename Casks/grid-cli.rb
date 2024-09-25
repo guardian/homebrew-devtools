@@ -1,8 +1,8 @@
 cask "grid-cli" do
   arch arm: "arm64", intel: "x64"
-  version "1.6.0-1d376b2"
-  sha256 arm:   "2a745aaf80af41283c149534ebed39da11b774649a246184e48562fba86ce328",
-         intel: "6171632e32d6c45b2a35e6dcc9868f876de0609c886d506a4fb38e9dd3c2cd53"
+  version "1.6.1-7080129"
+  sha256 arm:   "4f862c4fff47be4224825a96badbf098347cfe21a051c296228a23315a73d125",
+         intel: "03cc7fc8e1e822ff769b244de6e6cf0563d7988022ee50a0035a38b2e3af824d"
 
   url "https://github.com/guardian/grid-cli/releases/download/v#{version.sub(%r{-\w+}, '')}/grid-v#{version}-darwin-#{arch}.tar.xz"
   name "grid-cli"
