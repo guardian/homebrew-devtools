@@ -12,7 +12,7 @@ class FsbpFix < Formula
     end
   
     def install
-      bin.install "ingress-inquisition"
+      bin.install "fsbp-fix"
     end
   end
   
