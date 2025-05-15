@@ -1,9 +1,9 @@
 class Ssm < Formula
   desc "ssh replacement: CLI program that wraps SSM's EC2 Run Command"
   homepage "https://github.com/guardian/ssm-scala"
-  version "3.7.0"
-  url "https://github.com/guardian/ssm-scala/releases/download/v3.7.0/ssm.tar.gz"
-  sha256 "eb72dde1cca41dff32a243072e782f769795a1d2c84f5d31b36dfdd52f7179d3"
+  version "3.7.1"
+  url "https://github.com/guardian/ssm-scala/releases/download/v3.7.1/ssm.tar.gz"
+  sha256 "781c160704ca5ef79f7272119ea27b7aa0f58fdc5c903e1775d582d94faaab50"
 
   def install
     bin.install "ssm"
