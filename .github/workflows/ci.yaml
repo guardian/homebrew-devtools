@@ -27,4 +27,4 @@ jobs:
           mkdir -p $(brew --repository)/Library/Taps/guardian
           ln -s $PWD $(brew --repository)/Library/Taps/guardian/homebrew-devtools
           brew tap --repair
-          brew install --cask Casks/gu-base.rb
+          brew install --cask gu-base
