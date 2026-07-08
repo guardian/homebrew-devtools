@@ -26,12 +26,11 @@ cask 'gu-base' do
   depends_on cask:     'gu-scala'
 
   # guardian stuff
-  depends_on formula:  'guardian/devtools/ssm'
   depends_on formula:  'guardian/devtools/dev-nginx'
 
   depends_on cask: 'gpg-suite'
 
-  # This is a dependency of `guardian/devtools/ssm`
+  # This is a dependency of `aws ssm` cli tooling
   depends_on cask: 'session-manager-plugin'
 
 end
