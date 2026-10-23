@@ -39,3 +39,6 @@ brew install --cask intellij-idea
 brew install --cask visual-studio-code
 brew install --cask google-chrome
 ```
+
+> [!NOTE]
+> **Deprecation:** `fsbp-fix` is no longer available from this tap. Existing installations remain, but you can’t install or upgrade it through the tap. The [guardian/fsbp-tools](https://github.com/guardian/fsbp-tools) repo is archived.
