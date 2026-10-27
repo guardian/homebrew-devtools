@@ -4,7 +4,7 @@
 First, add the tap and [trust it](https://docs.brew.sh/Tap-Trust):
 
 ```bash
-brew tap guardian/homebrew-devtools
+brew tap guardian/devtools
 brew trust guardian/devtools
 ```
 
