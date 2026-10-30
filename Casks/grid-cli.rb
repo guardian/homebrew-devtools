@@ -10,4 +10,6 @@ cask "grid-cli" do
   homepage "https://github.com/guardian/grid-cli"
 
   binary "grid/bin/grid"
+
+  depends_on :macos
 end
