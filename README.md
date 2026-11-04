@@ -1,10 +1,11 @@
 # Guardian Developer Tools
 
 ## Usage
-First, add the tap:
+First, add the tap and [trust it](https://docs.brew.sh/Tap-Trust):
 
 ```bash
-brew tap guardian/homebrew-devtools
+brew tap guardian/devtools
+brew trust guardian/devtools
 ```
 
 Then, install the [casks](./Casks) and [formulae](./Formula).
